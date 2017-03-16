@@ -1,10 +1,10 @@
 /*------------------------------------------------------------------
 
 [Master Stylesheet]
-Project:	    Matarial CV/Resume Template 
+Project:	    Matarial CV/Resume Template
 Version:	    1.0
-Last change:	06/02/16 
-Primary use:	CV/Resume, Portfolio, Perosnal Website 
+Last change:	06/02/16
+Primary use:	CV/Resume, Portfolio, Perosnal Website
 
 -------------------------------------------------------------------*/
 /*
@@ -12,7 +12,7 @@ Primary use:	CV/Resume, Portfolio, Perosnal Website
 | CSS INDEX
 |----------------------------------------------------------------------------
     1. STYLESHEET
-        1-1. CUSTOM 
+        1-1. CUSTOM
         1-2. TYPOGRAPHY
         1.3. BODY
     2. SIDEBAR
@@ -128,6 +128,8 @@ body {
 .container {
   margin-top: 24px;
 }
+
+@media only screen and (min-width:993px){.container{width: 82% !important;}}
 /* style for
 
 ***** Sidebar  *****
@@ -278,6 +280,13 @@ body {
   display: block;
   font-size: 30pt;
 }
+.inline-fa {
+  text-align: center;
+  display: inline-block !important;
+  font-size: 30pt;
+  margin-left: 25px;
+  margin-right: 25px;
+}
 .section .section-wrapper {
   background-color: #ffffff;
   overflow: hidden;
@@ -288,7 +297,7 @@ body {
   margin-top: 40px;
 }
 .section .section-wrapper h2 {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 25px;
 }
 /* style for
@@ -300,7 +309,8 @@ body {
   padding-right: 0px !important;
 }
 .custom-content-wrapper {
-  padding-right: 30px;
+  margin-right: 35px;
+  margin-left: 25px;
   margin-bottom: 25px;
   border-bottom: 1px solid #bdbdbd;
 }
@@ -443,8 +453,8 @@ body {
 }
 /* style for
     **************
-   * Cover latter * 
- 
+   * Cover latter *
+
 */
 .cover-latter {
   padding: 30px;
@@ -672,4 +682,56 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 .project-information li a {
   color: #5da4d9;
+}
+
+/*
+ * Quotes
+ */
+ .quotes {
+   text-align: center;
+   margin-top: 70px;
+ }
+
+.quotes .thumbnail {
+  padding: 20px;
+  background-color: white;
+}
+.quotes .thumbnail h3 {
+  font-size: 26px;
+  margin-bottom: 0px;
+  line-height: 40px;
+}
+.quotes .thumbnail img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+  margin-top: -60px;
+  opacity: 0.9;
+}
+.quotes .thumbnail p {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 27px;
+  padding: 10px 30px;
+  margin-top: 0px;
+  color: #8a8a8b;
+}
+.quotes .thumbnail p:before {
+  content: "“ ";
+  font-size: 30px;
+  line-height: 0;
+  display: inline-block;
+  margin: 0 0 0 4px;
+}
+.quotes .thumbnail p:after {
+  content: "”";
+  font-size: 30px;
+  line-height: 0;
+  display: inline-block;
+  margin: 0 0 0 4px;
 }

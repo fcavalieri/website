@@ -4,25 +4,25 @@ $(document).ready(function() {
     /***************************************************************************/
             /* NAVIGATION  */
     /***************************************************************************/
-   
+
       $('.button-collapse').sideNav();
- 
+
     /**************************************************************************
-                 SKILL BAR 
+                 SKILL BAR
     **************************************************************************/
 
     $(".determinate").each(function(){
       var width = $(this).text();
       $(this).css("width", width)
         .empty()
-        .append('<i class="fa fa-circle"></i>');                
+        .append('<i class="fa fa-circle"></i>');
     });
 
 
     /**************************************************************************
-             BLOG POST 
+             BLOG POST
     **************************************************************************/
-  
+
     jQuery(window).on('load', function(){ var $ = jQuery;
         $('.blog').masonry({
           itemSelector: '.blog-post',
@@ -34,8 +34,8 @@ $(document).ready(function() {
 
     var height = $('.caption').height();
         if($(window).width()){
-          $('#featured').css('height', height);   
-          $('#featured img').css('height', height);   
+          $('#featured').css('height', height);
+          $('#featured img').css('height', height);
         }
 
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
         var name = $("#name").val();
         var email = $("#email").val();
         var message = $("#message").val();
-        
+
         $.ajax({
             type: "POST",
             url: "process.php",
@@ -91,7 +91,7 @@ $(document).ready(function() {
         submitMSG(true, "Message Sent!")
     }
     function formError(){
-        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+        $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
         function(){
             $(this).removeClass();
         });
@@ -104,13 +104,14 @@ $(document).ready(function() {
         }
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
-    
-    
+
+
     /**************************************************************************
        Projects
     **************************************************************************/
-    $('#portfolio-item').mixItUp();
-    
+    if ($('#portfolio-item').length)
+     $('#portfolio-item').mixItUp();
+
     $('.sa-view-project-detail').on('click', function(event) {
         event.preventDefault();
         var href          = $(this).attr('href') + ' ' + $(this).attr('data-action'),
@@ -161,15 +162,32 @@ $(document).ready(function() {
 
 });
 
+$(window).load(function() {
+  equalheight();
+});
+
+
+$(window).resize(function(){
+  equalheight();
+});
+
+function equalheight(){
+  if ($('#content').length && $('#content').length && $(window).width() > 600)
+    $('#sidebar').css("min-height", $('#content').height() - 44);
+  else {
+    $('#sidebar').removeAttr('style');
+  }
+}
+
     /***************************************************************************
                 MAP
     ***************************************************************************/
-    
+    /*
     google.maps.event.addDomListener(window, 'load', init);
     function init() {
         var mapOptions = {
           zoom: 17,
-          scrollwheel: false, 
+          scrollwheel: false,
           navigationControl: false,
           center: new google.maps.LatLng(24.906308,91.870413),
           styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},
@@ -194,4 +212,4 @@ $(document).ready(function() {
           title: '24 Golden Tower (2nd floor), Amborkhana, Sylhet.!'
       });
     }
-
+    */
