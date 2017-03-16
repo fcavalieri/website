@@ -128,8 +128,6 @@ body {
 .container {
   margin-top: 24px;
 }
-
-@media only screen and (min-width:993px){.container{width: 82% !important;}}
 /* style for
 
 ***** Sidebar  *****
@@ -146,10 +144,22 @@ body {
   position: relative;
 }
 .sidebar .heading .feature-img {
-  position: relative;
+  /*position: relative;*/
+  text-align: center;
 }
 .sidebar .heading .feature-img img {
-  width: 100%;
+  /*width: 100%;*/
+  margin-top: 60px;
+}
+.sidebar .heading .feature-img h2 {
+  /*width: 100%;*/
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-bottom: 10px;
+}
+.sidebar .heading .feature-img a {
+  /*width: 100%;*/
+  margin-bottom: 20px;
 }
 .sidebar .heading .button-collapse {
   display: block !important;
@@ -286,6 +296,10 @@ body {
   font-size: 30pt;
   margin-left: 25px;
   margin-right: 25px;
+}
+.button-fa {
+  margin-right: 10px;
+  margin-left: -10px;
 }
 .section .section-wrapper {
   background-color: #ffffff;
@@ -534,11 +548,11 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 .btn {
   margin-left: 10px;
-  background-color: #5da4d9;
+  background-color: #e26868;
 }
 .btn:hover,
 .btn:focus {
-  background-color: #5da4d9;
+  background-color: #dc2e2e;
 }
 .email-success,
 .email-failed {
@@ -734,4 +748,24 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   line-height: 0;
   display: inline-block;
   margin: 0 0 0 4px;
+}
+
+#info-about {
+  padding-top: 8px;
+}
+
+#info-phone {
+  padding-top: 4px;
+}
+
+#info-email {
+  padding-top: 5px;
+}
+
+#info-address {
+  padding-top: 6px;
+}
+
+#info-skills {
+  padding-top: 4px;
 }

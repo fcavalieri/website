@@ -1,9 +1,12 @@
 /* Smartphones (landscape) */
-@media only screen and (min-width: 321px) and (max-device-width: 568px) {
+/*@media only screen and (min-width: 321px) and (max-device-width: 568px) {*/
+/*
   .container {
     width: 100% !important;
   }
+*/
   /* Sidebar Style*/
+/*
   .sidebar .sidebar-item .info {
     margin-top: 20px;
   }
@@ -17,7 +20,9 @@
   .sidebar .skill-line h3 {
     margin-bottom: 50px;
   }
+  */
   /* Section Style*/
+  /*
   .section {
     padding: 0px !important;
     text-align: center;
@@ -34,7 +39,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .interests {
+  */
+  /*.interests {
     margin-bottom: 10px;
   }
   .interests ul li {
@@ -42,8 +48,9 @@
     margin-right: initial;
   }
 }
+*/
 /* Smartphones (portrait) */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   .container {
     width: 100% !important;
   }
@@ -54,9 +61,15 @@
   .sidebar .button-collapse {
     margin-left: 0px;
   }
+  .sidebar .sidebar-item {
+    padding-right: 40px !important;
+    margin-left: 10px !important;
+  }
+  /*
   .sidebar-item .info {
     margin-top: 20px;
   }
+  */
   .skill-line span {
     text-align: left;
     display: block;
@@ -85,84 +98,37 @@
     text-align: center;
   }
 }
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Sidebar Style*/
-  .sidebar .icon {
-    margin-bottom: 15px;
-  }
-  .sidebar .nav-icon {
-    top: 0px;
-  }
-  /* Sidebar Style*/
-  .section {
-    text-align: left;
-    padding-right: 0px !important;
-    padding-left: 24px !important;
-  }
-  .section .education-details p {
-    margin-top: 5px;
-    padding-top: 0px;
-  }
-}
-/* iPads (portrait) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  body {
-    text-align: center;
-  }
-  .container {
-    width: 100% !important;
-  }
-  .sidebar .nav-icon {
-    top: 130px;
-  }
-  .sidebar .sidebar-item {
-    overflow: hidden;
-  }
-  .sidebar .icon {
-    margin: 30px 0;
-  }
-  .sidebar .button-collapse {
-    margin-left: 6px;
-  }
-  .sidebar .skill-line span {
-    text-align: left;
-    display: block;
-  }
-  .sidebar .skill-line h3 {
-    margin-bottom: 20px;
-  }
-  .section {
-    padding: 0px !important;
-    margin-top: 30px;
-    padding: 0px 22px;
-    text-align: center;
-  }
-  .section .custom-content-wrapper p {
-    margin-top: 5px;
-    padding: 0px 20px;
-  }
-  .interests {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-}
+
 /* tab portrait and down   */
 @media only screen and (max-width: 992px) {
   .container {
     width: 100% !important;
     margin-top: 0px !important;
   }
+  .section {
+    padding-left: 22px !important;
+  }
   .row {
     margin-left: -1.5rem !important;
     margin-right: -1.5rem !important;
+    margin-bottom: 10px !important;
     overflow-x: hidden !important;
   }
   /* Nav  Style*/
   .button-collapse i {
     margin-left: 20px;
   }
+  .sidebar .sidebar-item {
+    padding-right: 20px !important;
+    margin-left: 10px !important;
+  }
+  .progress {
+    width: 90% !important;
+  }
+
+
   /* Sidebar Style*/
+/*
   .sidebar {
     text-align: center;
   }
@@ -173,8 +139,8 @@
     padding: 0 20px;
   }
   .sidebar .icon {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
   }
   .sidebar .info {
     padding-left: 15px;
@@ -187,7 +153,9 @@
     text-align: left;
     display: block;
   }
+  */
   /* Section Style*/
+  /*
   .section {
     text-align: center;
     margin-top: 30px;
@@ -214,6 +182,7 @@
   .section .blog-post {
     margin: 0px 30px;
   }
+*/
   /* Cover latter section Style*/
   .cover-latter {
     text-align: left;
@@ -262,6 +231,7 @@
   }
 }
 /* iphone 6 (portrait and landscape)  */
+/*
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   body {
     text-align: center;
@@ -272,5 +242,12 @@
   .skill-line span {
     text-align: left;
     display: block;
+  }
+}
+*/
+/* computers */
+@media only screen and (min-width:993px){
+  .container {
+    width: 82% !important;
   }
 }
