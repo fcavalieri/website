@@ -750,8 +750,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   margin: 0 0 0 4px;
 }
 
-#info-about {
-  padding-top: 8px;
+.section-item-details h4 {
+  margin-top: 8px;
 }
 
 #info-phone {
@@ -768,4 +768,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 #info-skills {
   padding-top: 4px;
+}
+
+.read-more {
+  color: "#039be5" !important;
 }

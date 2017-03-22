@@ -172,6 +172,7 @@ $(window).resize(function(){
 });
 
 function equalheight(){
+  /*
   if ($('#quote-1-1').length && $('#quote-1-2').length)
   {
     if ($(window).width() > 992)
@@ -205,7 +206,7 @@ function equalheight(){
       $('#quote-2-2').removeAttr('style');
     }
   }
-
+*/
   if ($('#sidebar').length && $('#content').length)
   {
     if ($(window).width() > 600)
