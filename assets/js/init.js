@@ -172,41 +172,6 @@ $(window).resize(function(){
 });
 
 function equalheight(){
-  /*
-  if ($('#quote-1-1').length && $('#quote-1-2').length)
-  {
-    if ($(window).width() > 992)
-    {
-      $('#quote-1-1').removeAttr('style');
-      $('#quote-1-2').removeAttr('style');
-      var maxHeight = Math.max($('#quote-1-1').height(), $('#quote-1-2').height()) + 50;
-      $('#quote-1-1').css("min-height", maxHeight);
-      $('#quote-1-2').css("min-height", maxHeight);
-    }
-    else
-    {
-      $('#quote-1-1').removeAttr('style');
-      $('#quote-1-2').removeAttr('style');
-    }
-  }
-
-  if ($('#quote-2-1').length && $('#quote-2-2').length)
-  {
-    if ($(window).width() > 992)
-    {
-      $('#quote-2-1').removeAttr('style');
-      $('#quote-2-2').removeAttr('style');
-      var maxHeight = Math.max($('#quote-2-1').height(), $('#quote-2-2').height()) + 50;
-      $('#quote-2-1').css("min-height", maxHeight);
-      $('#quote-2-2').css("min-height", maxHeight);
-    }
-    else
-    {
-      $('#quote-2-1').removeAttr('style');
-      $('#quote-2-2').removeAttr('style');
-    }
-  }
-*/
   if ($('#sidebar').length && $('#content').length)
   {
     if ($(window).width() > 600)
