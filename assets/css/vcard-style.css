@@ -120,5 +120,10 @@ section.section--center {
 #add-contact {
   margin-top: 10px;
   display: block;
-  background-color: #5da4d9 !important;
+  background-color: #e26868 !important;
+}
+
+#add-contact:hover,
+#add-contact:focus {
+  background-color: #dc2e2e !important;
 }
